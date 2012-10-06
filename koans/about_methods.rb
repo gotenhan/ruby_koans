@@ -120,7 +120,7 @@ class AboutMethods < EdgeCase::Koan
     exception = assert_raise(NoMethodError) do
       self.my_private_method
     end
-    assert_match "private method `my_private_method' called", exception.message
+    assert_match "my_private_method", exception.message
   end
 
   # ------------------------------------------------------------------
